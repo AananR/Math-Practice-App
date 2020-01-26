@@ -87,7 +87,7 @@ public class AdditionQuestions extends AppCompatActivity {
                     //we are passing the variables here
                     i.putExtra("correct", correct);
                     i.putExtra("numQuestion", numQuestion );
-                    i.putExtra("percentageCorrect", percentageCorrect)
+                    i.putExtra("percentageCorrect", percentageCorrect);
                     startActivity(i);
 
                 }

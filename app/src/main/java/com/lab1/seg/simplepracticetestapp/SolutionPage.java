@@ -26,7 +26,7 @@ public class SolutionPage extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             correct = extras.getInt("correct");
-            turn = extras.getInt("turn");
+            turn = extras.getInt("numQuestion");
             percentageCorrect = extras.getInt("percentageCorrect");}
         mLayout = (LinearLayout) findViewById(R.id.linearLayout);
         mButton = (Button) findViewById(R.id.button7);
@@ -47,12 +47,15 @@ public class SolutionPage extends AppCompatActivity {
 
         double perc = ((cor/turnTwo)*100);
 
-        if(perc>=percentageCorrect){
-            String ans = "Congratulations you passed with a grade of "+ perc+"%";
+        //changing it to int so easier to read
+        int value = (int) perc;
+
+        if(value>=percentageCorrect){
+            String ans = "Congratulations you passed with a grade of "+ value+"%";
             return ans;
         }else{
 
-            String ans = "Unfortunately you failed with a grade of "+perc+ "%. You just need more practice!";
+            String ans = "Unfortunately you failed with a grade of "+value+ "%. You just need more practice!";
             return ans;
 
         }

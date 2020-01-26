@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Multiplication"
-                android:onClick="openMultiplicatioPage"/>
+                android:onClick="openMultiplicationPage"/>
 
         </LinearLayout>
 
