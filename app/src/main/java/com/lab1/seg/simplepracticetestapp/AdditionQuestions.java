@@ -2,6 +2,7 @@ package com.lab1.seg.simplepracticetestapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,8 +26,8 @@ public class AdditionQuestions extends AppCompatActivity {
     int correct = 0;
     int answer = 0;
 
-    int numQuestion = 0;
-    int percentageCorrect=50;
+    int numQuestion;
+    int percentageCorrect;
 
     int counter= 0;
 
@@ -38,15 +39,8 @@ public class AdditionQuestions extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             numQuestion = extras.getInt("numQuestions");
-            percentageCorrect = extras.getInt("percentage");}else{
-
-            counter = numQuestion;
-            //If the user doesnt specify youll get a number of questions between 5-10
-            numQuestion = (int) ((Math.random()*15)+5);
-            counter = numQuestion;
-
-
-        }
+            percentageCorrect = extras.getInt("percentage");
+            counter = numQuestion;}
 
         //We are just fetching the components for the xml
         mLayout = (LinearLayout) findViewById(R.id.linearLayout);
@@ -54,10 +48,28 @@ public class AdditionQuestions extends AppCompatActivity {
         mButton = (Button) findViewById(R.id.button6);
         text = (TextView) findViewById(R.id.textView45);
 
-        mButton.setOnClickListener(onClick());
-
         //we call the math function on the on create for the first question
         math();
+
+        mButton.setOnClickListener(onClick());
+
+
+        //this will allow the user to use enter on keyboard to continue
+        mEditText.setOnKeyListener(new View.OnKeyListener()
+        {
+            public boolean onKey(View v, int keyCode, KeyEvent event)
+            {
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    // Perform action on key press
+                    mButton.performClick();
+                    return true;
+                }
+                return false;
+            }
+        });
+
+
     }
 
     //the onclick decrements the counter for turns as well as keeps track of the number of correct
@@ -66,6 +78,11 @@ public class AdditionQuestions extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+                //my validation that the user is actually inputting an integer and positive
+
+                if( mEditText.getText().toString().length() == 0 ){
+                    mEditText.setError( "A positive integer is required!" );}else{
                 counter = counter-1;
 
                 int userAns =  Integer.parseInt(mEditText.getText().toString());
@@ -90,7 +107,7 @@ public class AdditionQuestions extends AppCompatActivity {
                     i.putExtra("percentageCorrect", percentageCorrect);
                     startActivity(i);
 
-                }
+                }}
 
             }
         };

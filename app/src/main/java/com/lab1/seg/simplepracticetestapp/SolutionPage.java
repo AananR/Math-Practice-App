@@ -51,11 +51,11 @@ public class SolutionPage extends AppCompatActivity {
         int value = (int) perc;
 
         if(value>=percentageCorrect){
-            String ans = "Congratulations you passed with a grade of "+ value+"%";
+            String ans = "Congratulations you passed with a grade of "+ value+"%! You got "+correct+"/"+turn+" correct! ";
             return ans;
         }else{
 
-            String ans = "Unfortunately you failed with a grade of "+value+ "%. You just need more practice!";
+            String ans = "Unfortunately you failed with a grade of "+value+ "%. You only got "+correct+"/"+turn+" correct!";
             return ans;
 
         }
@@ -66,7 +66,13 @@ public class SolutionPage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SolutionPage.this, MainPage.class));
+                Intent i = new Intent(SolutionPage.this, MainPage.class);
+
+                //we are passing the variables here
+
+                i.putExtra("numQuestions", turn );
+                i.putExtra("percentage", percentageCorrect);
+                startActivity(i);
 
             }
         };

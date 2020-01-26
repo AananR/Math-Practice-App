@@ -2,6 +2,7 @@ package com.lab1.seg.simplepracticetestapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,21 +39,29 @@ public class MultiplicationQuestions extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             numQuestion = extras.getInt("numQuestions");
-            percentageCorrect = extras.getInt("percentage");}else{
-
-            counter = numQuestion;
-            //If the user doesnt specify youll get a number of questions between 5-10
-            numQuestion = (int) ((Math.random()*5)+5);
-            counter = numQuestion;
-
-
-        }
+            percentageCorrect = extras.getInt("percentage");
+            counter = numQuestion;}
 
         //We are just fetching the components for the xml
         mLayout = (LinearLayout) findViewById(R.id.linearLayout);
         mEditText = (EditText) findViewById(R.id.editText);
         mButton = (Button) findViewById(R.id.button6);
         text = (TextView) findViewById(R.id.textView45);
+
+
+        mEditText.setOnKeyListener(new View.OnKeyListener()
+        {
+            public boolean onKey(View v, int keyCode, KeyEvent event)
+            {
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                        (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    // Perform action on key press
+                    mButton.performClick();
+                    return true;
+                }
+                return false;
+            }
+        });
 
         mButton.setOnClickListener(onClick());
 
@@ -66,35 +75,41 @@ public class MultiplicationQuestions extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                counter = counter-1;
 
-                int userAns =  Integer.parseInt(mEditText.getText().toString());
+                //my validation that the user is actually inputting an integer and positive
 
-                if(userAns == answer){
-                    correct=correct+1;
-                }
+                if( mEditText.getText().toString().length() == 0 ){
+                    mEditText.setError( "A positive integer is required!" );}else{
+                    counter = counter-1;
 
-                //resetting the text box so it is empty
-                mEditText.setText("");
-                if(counter>0){
-                    math();
-                }else{
+                    int userAns =  Integer.parseInt(mEditText.getText().toString());
 
-                    //if the number of questions is complete we open a new activity that will show the user how they did
+                    if(userAns == answer){
+                        correct=correct+1;
+                    }
 
-                    Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+                    //resetting the text box so it is empty
+                    mEditText.setText("");
+                    if(counter>0){
+                        math();
+                    }else{
 
-                    //we are passing the variables here
-                    i.putExtra("correct", correct);
-                    i.putExtra("numQuestion", numQuestion );
-                    i.putExtra("percentageCorrect", percentageCorrect);
-                    startActivity(i);
+                        //if the number of questions is complete we open a new activity that will show the user how they did
 
-                }
+                        Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+
+                        //we are passing the variables here
+                        i.putExtra("correct", correct);
+                        i.putExtra("numQuestion", numQuestion );
+                        i.putExtra("percentageCorrect", percentageCorrect);
+                        startActivity(i);
+
+                    }}
 
             }
         };
     }
+
 
 
     //this function will set the question
