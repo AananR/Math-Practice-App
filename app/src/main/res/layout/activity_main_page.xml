@@ -16,6 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="134dp"
+            android:background="#A9A9A9"
             android:orientation="vertical">
 
             <TextView
@@ -30,30 +31,30 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="213dp"
+
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Math" />
+                android:text="Addition"
+                android:onClick="openAdditionPage"/>
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Science" />
+
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="History" />
+                android:text="Multiplication"
+                android:onClick="openMultiplicationPage"/>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="128dp"
+            android:layout_height="203dp"
             android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
@@ -66,7 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/darker_gray"
-                android:text="Settings" />
+                android:text="Settings"
+                android:onClick="openSettingPage"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
