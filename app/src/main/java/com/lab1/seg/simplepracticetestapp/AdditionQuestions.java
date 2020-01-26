@@ -43,7 +43,7 @@ public class AdditionQuestions extends AppCompatActivity {
             counter = numQuestion;
             //If the user doesnt specify youll get a number of questions between 5-10
             numQuestion = (int) ((Math.random()*15)+5);
-             counter = numQuestion;
+            counter = numQuestion;
 
 
         }

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubtractionPage"></activity>
+        <activity android:name=".MultiplicationQuestions"></activity>
         <activity android:name=".SolutionPage" />
         <activity android:name=".AdditionQuestions" />
         <activity android:name=".MainPage" />
