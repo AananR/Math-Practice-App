@@ -38,20 +38,28 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Math"
-                android:onClick="openMainPage"/>
+                android:text="Addition"
+                android:onClick="openAdditionPage"/>
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Science" />
+                android:text="Subtraction"
+                android:onClick="openSubtractionPage"/>
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="History" />
+                android:text="Multiplication"
+                android:onClick="openMultiplicatioPage"/>
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Division"
+                android:onClick="openDivisionPage"/>
         </LinearLayout>
 
         <LinearLayout

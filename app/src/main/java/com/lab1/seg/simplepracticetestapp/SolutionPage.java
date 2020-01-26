@@ -13,6 +13,7 @@ public class SolutionPage extends AppCompatActivity {
 
     int correct = 0;
     int turn = 0;
+    int percentageCorrect =0;
 
     private LinearLayout mLayout;
     private Button mButton;
@@ -25,7 +26,8 @@ public class SolutionPage extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             correct = extras.getInt("correct");
-            turn = extras.getInt("turn");        }
+            turn = extras.getInt("turn");
+            percentageCorrect = extras.getInt("percentageCorrect");}
         mLayout = (LinearLayout) findViewById(R.id.linearLayout);
         mButton = (Button) findViewById(R.id.button7);
         text = (TextView) findViewById(R.id.textView46);
@@ -39,14 +41,18 @@ public class SolutionPage extends AppCompatActivity {
     }
 
     public String percentage(){
-        int perc = correct/turn*100;
+        //have to make the two values a double or else we are returning 0 when we do correct/turns
+        double cor = correct;
+        double turnTwo = turn;
 
-        if(perc>50){
-            String ans = "Congratulations you passed with a grade of "+ perc;
+        double perc = ((cor/turnTwo)*100);
+
+        if(perc>=percentageCorrect){
+            String ans = "Congratulations you passed with a grade of "+ perc+"%";
             return ans;
         }else{
 
-            String ans = "Unfortunately you failed with a grade of "+ correct+ ". You just need more practice!";
+            String ans = "Unfortunately you failed with a grade of "+perc+ "%. You just need more practice!";
             return ans;
 
         }

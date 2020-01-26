@@ -19,45 +19,75 @@ public class AdditionQuestions extends AppCompatActivity {
     private Button mButton;
     private TextView text;
 
-    int rando = (int) ((Math.random()*10)+1);
+
+
+    //This will keep track of whats correct
     int correct = 0;
     int answer = 0;
-    int turns = 3;
+
+    int numQuestion = 0;
+    int percentageCorrect=50;
+
+    int counter= 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addition_questions);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            numQuestion = extras.getInt("numQuestions");
+            percentageCorrect = extras.getInt("percentage");}else{
+
+            counter = numQuestion;
+            //If the user doesnt specify youll get a number of questions between 5-10
+            numQuestion = (int) ((Math.random()*15)+5);
+             counter = numQuestion;
+
+
+        }
+
+        //We are just fetching the components for the xml
         mLayout = (LinearLayout) findViewById(R.id.linearLayout);
         mEditText = (EditText) findViewById(R.id.editText);
         mButton = (Button) findViewById(R.id.button6);
         text = (TextView) findViewById(R.id.textView45);
 
         mButton.setOnClickListener(onClick());
+
+        //we call the math function on the on create for the first question
         math();
     }
 
+    //the onclick decrements the counter for turns as well as keeps track of the number of correct
     private View.OnClickListener onClick() {
         return new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                turns = turns-1;
+                counter = counter-1;
 
                 int userAns =  Integer.parseInt(mEditText.getText().toString());
 
                 if(userAns == answer){
                     correct=correct+1;
                 }
+
+                //resetting the text box so it is empty
                 mEditText.setText("");
-                if(turns>0){
+                if(counter>0){
                     math();
                 }else{
 
+                    //if the number of questions is complete we open a new activity that will show the user how they did
+
                     Intent i = new Intent(AdditionQuestions.this, SolutionPage.class);
+
+                    //we are passing the variables here
                     i.putExtra("correct", correct);
-                    i.putExtra("turn", 3);
+                    i.putExtra("numQuestion", numQuestion );
+                    i.putExtra("percentageCorrect", percentageCorrect)
                     startActivity(i);
 
                 }
@@ -66,6 +96,8 @@ public class AdditionQuestions extends AppCompatActivity {
         };
     }
 
+
+    //this function will set the question
 
     public void math(){
 
@@ -79,6 +111,8 @@ public class AdditionQuestions extends AppCompatActivity {
 
     }
 
+
+    //this function creates the questions
     public String additionQuestion(){
         int firstInt = (int) ((Math.random()*100)+1);
         int secondInt = (int) ((Math.random()*100)+1);

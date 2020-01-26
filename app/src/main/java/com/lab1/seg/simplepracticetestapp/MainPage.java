@@ -15,7 +15,19 @@ public class MainPage extends AppCompatActivity {
     }
 
 
-    public void openMainPage(View v){
+    public void openAdditionPage(View v){
         startActivity(new Intent(MainPage.this, AdditionQuestions.class));
+    }
+
+    public void openSubtractionPage(View v){
+        startActivity(new Intent(MainPage.this, SubtractionQuestions.class));
+    }
+
+    public void openMultiplicationPage(View v){
+        startActivity(new Intent(MainPage.this, MultiplicationQuestions.class));
+    }
+
+    public void openDivisionPage(View v){
+        startActivity(new Intent(MainPage.this, DivisionQuestions.class));
     }
 }
