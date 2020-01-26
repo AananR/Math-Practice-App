@@ -76,6 +76,7 @@ public class SettingPage extends AppCompatActivity {
 
 
         //my validation that the user is actually inputting an integer and positive
+       try{
         if( mEditText.getText().toString().length() == 0 ){
             mEditText.setError( "A positive integer is required!" );}
         else if(Integer.parseInt(mEditText.getText().toString())<=0){
@@ -99,6 +100,9 @@ public class SettingPage extends AppCompatActivity {
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
 
+       }}catch (NumberFormatException e){
+
+           mEditText.setError( "A positive integer is required!" );
        }
 
 
@@ -117,6 +121,7 @@ public class SettingPage extends AppCompatActivity {
 
     //This is the onclick function that will change the Percentage to pass
     public void updatepercentageCorrect(View v){
+        try{
         //my validation that the user is actually inputting an integer and positive
 
         if( pEditText.getText().toString().length() == 0 ){
@@ -142,7 +147,12 @@ public class SettingPage extends AppCompatActivity {
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
 
+        }}catch (NumberFormatException e){
+
+            pEditText.setError( "A positive integer is required!" );
         }
+
+
 
 
         //resetting the text box so it is empty

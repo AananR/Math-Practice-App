@@ -83,9 +83,13 @@ public class AdditionQuestions extends AppCompatActivity {
 
                 if( mEditText.getText().toString().length() == 0 ){
                     mEditText.setError( "A positive integer is required!" );}else{
-                counter = counter-1;
 
-                int userAns =  Integer.parseInt(mEditText.getText().toString());
+                    try{
+
+                    counter = counter-1;
+
+
+                    int userAns =  Integer.parseInt(mEditText.getText().toString());
 
                 if(userAns == answer){
                     correct=correct+1;
@@ -107,7 +111,11 @@ public class AdditionQuestions extends AppCompatActivity {
                     i.putExtra("percentageCorrect", percentageCorrect);
                     startActivity(i);
 
-                }}
+                }}catch (NumberFormatException e){
+                        //have to increment again because of the try
+                        counter = counter+1;
+                        mEditText.setError( "A positive integer is required!" );
+                    }}
 
             }
         };

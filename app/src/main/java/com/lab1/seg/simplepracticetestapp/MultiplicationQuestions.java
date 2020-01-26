@@ -80,30 +80,38 @@ public class MultiplicationQuestions extends AppCompatActivity {
 
                 if( mEditText.getText().toString().length() == 0 ){
                     mEditText.setError( "A positive integer is required!" );}else{
-                    counter = counter-1;
 
-                    int userAns =  Integer.parseInt(mEditText.getText().toString());
+                    try{
 
-                    if(userAns == answer){
-                        correct=correct+1;
-                    }
+                        counter = counter-1;
 
-                    //resetting the text box so it is empty
-                    mEditText.setText("");
-                    if(counter>0){
-                        math();
-                    }else{
 
-                        //if the number of questions is complete we open a new activity that will show the user how they did
+                        int userAns =  Integer.parseInt(mEditText.getText().toString());
 
-                        Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+                        if(userAns == answer){
+                            correct=correct+1;
+                        }
 
-                        //we are passing the variables here
-                        i.putExtra("correct", correct);
-                        i.putExtra("numQuestion", numQuestion );
-                        i.putExtra("percentageCorrect", percentageCorrect);
-                        startActivity(i);
+                        //resetting the text box so it is empty
+                        mEditText.setText("");
+                        if(counter>0){
+                            math();
+                        }else{
 
+                            //if the number of questions is complete we open a new activity that will show the user how they did
+
+                            Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+
+                            //we are passing the variables here
+                            i.putExtra("correct", correct);
+                            i.putExtra("numQuestion", numQuestion );
+                            i.putExtra("percentageCorrect", percentageCorrect);
+                            startActivity(i);
+
+                        }}catch (NumberFormatException e){
+                        //have to increment again because of the try
+                        counter = counter+1;
+                        mEditText.setError( "A positive integer is required!" );
                     }}
 
             }
