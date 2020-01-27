@@ -17,4 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void openMainPage(View v){
         startActivity(new Intent(MainActivity.this, MainPage.class));
     }
+
+
+
+
 }

@@ -32,10 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal"
-            android:text="An app for students to help them study for their upcoming exams."
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="Practicing for your exams and certifications made easy!"
             android:textAlignment="center"
-            />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <LinearLayout
             android:layout_width="match_parent"
