@@ -168,7 +168,7 @@ public class SettingPage extends AppCompatActivity {
 
         //We are sending the default number of questions and percentage correct
 
-        Intent i = new Intent(SettingPage.this, MainPage.class);
+        Intent i = new Intent(SettingPage.this, MainActivity.class);
 
         //we are passing the variables here
 

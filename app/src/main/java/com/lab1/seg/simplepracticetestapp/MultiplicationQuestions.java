@@ -1,5 +1,6 @@
 package com.lab1.seg.simplepracticetestapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -90,6 +92,38 @@ public class MultiplicationQuestions extends AppCompatActivity {
 
                         if(userAns == answer){
                             correct=correct+1;
+                            new AlertDialog.Builder(MultiplicationQuestions.this)
+                                    .setTitle("Correct")
+                                    .setMessage("You got it right!")
+
+                                    // Specifying a listener allows you to take an action before dismissing the dialog.
+                                    // The dialog is automatically dismissed when a dialog button is clicked.
+                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            // Continue with delete operation
+                                        }
+                                    })
+
+
+                                    .setIcon(android.R.drawable.ic_dialog_alert)
+                                    .show();
+                        }else{
+                            new AlertDialog.Builder(MultiplicationQuestions.this)
+                                    .setTitle("Incorrect")
+                                    .setMessage("You got it wrong!")
+
+                                    // Specifying a listener allows you to take an action before dismissing the dialog.
+                                    // The dialog is automatically dismissed when a dialog button is clicked.
+                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            // Continue with delete operation
+                                        }
+                                    })
+
+
+                                    .setIcon(android.R.drawable.ic_dialog_alert)
+                                    .show();
+
                         }
 
                         //resetting the text box so it is empty

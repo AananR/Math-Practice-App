@@ -66,7 +66,7 @@ public class SolutionPage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SolutionPage.this, MainPage.class);
+                Intent i = new Intent(SolutionPage.this, MainActivity.class);
 
                 //we are passing the variables here
 

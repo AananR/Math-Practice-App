@@ -14,7 +14,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,21 +40,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="290">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="73" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,8 +91,39 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_multiplication_questions.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            <state relative-caret-position="481">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="99" column="109" lean-forward="true" selection-start-line="99" selection-start-column="109" selection-end-line="99" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="68" column="69" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#2341#5614#0" expanded="true" />
+                <element signature="e#5613#5614#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,8 +132,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_addition_questions.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="420">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -94,20 +158,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_subtraction_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SubtractionPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_solution_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_setting_page.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainPage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_multiplication_questions.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_addition_questions.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java" />
       </list>
     </option>
   </component>
@@ -121,8 +185,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -339,85 +403,87 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SubtractionPage.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_subtraction_page.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingsActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting_page.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solution_page.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_multiplication_questions.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_addition_questions.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="135" column="83" selection-start-line="135" selection-start-column="83" selection-end-line="135" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#2203#3548#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="121" selection-end-column="5" />
-          <folding>
-            <element signature="e#2258#3595#0" expanded="true" />
-            <element signature="e#3594#3595#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="290">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_multiplication_questions.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/MultiplicationQuestions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="99" column="109" lean-forward="true" selection-start-line="99" selection-start-column="109" selection-end-line="99" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SettingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_page.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/SolutionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="68" column="69" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lab1/seg/simplepracticetestapp/AdditionQuestions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#2341#5614#0" expanded="true" />
+            <element signature="e#5613#5614#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
