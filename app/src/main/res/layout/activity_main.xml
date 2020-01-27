@@ -10,45 +10,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="-62dp"
-        tools:layout_editor_absoluteY="-16dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-42dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="117dp"
-            android:orientation="vertical"></LinearLayout>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Practice Test"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="@android:color/black" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|center_horizontal"
-            android:text="Practicing for your exams and certifications made easy!"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="127dp"
+            android:background="#A9A9A9"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please choose one of the following categories:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="233dp"
+                android:layout_height="111dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="openAdditionPage"
+                android:text="Addition" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="235dp"
+                android:layout_height="121dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="openMultiplicationPage"
+                android:text="Multiplication" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Continue"
-            android:onClick="openMainPage"/>
+            android:layout_height="119dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_blue_bright"
+                android:onClick="openSettingPage"
+                android:text="Settings" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

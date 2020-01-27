@@ -1,5 +1,6 @@
 package com.lab1.seg.simplepracticetestapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -9,6 +10,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -80,30 +82,70 @@ public class MultiplicationQuestions extends AppCompatActivity {
 
                 if( mEditText.getText().toString().length() == 0 ){
                     mEditText.setError( "A positive integer is required!" );}else{
-                    counter = counter-1;
 
-                    int userAns =  Integer.parseInt(mEditText.getText().toString());
+                    try{
 
-                    if(userAns == answer){
-                        correct=correct+1;
-                    }
+                        counter = counter-1;
 
-                    //resetting the text box so it is empty
-                    mEditText.setText("");
-                    if(counter>0){
-                        math();
-                    }else{
 
-                        //if the number of questions is complete we open a new activity that will show the user how they did
+                        int userAns =  Integer.parseInt(mEditText.getText().toString());
 
-                        Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+                        if(userAns == answer){
+                            correct=correct+1;
+                            new AlertDialog.Builder(MultiplicationQuestions.this)
+                                    .setTitle("Correct")
+                                    .setMessage("You got it right!")
 
-                        //we are passing the variables here
-                        i.putExtra("correct", correct);
-                        i.putExtra("numQuestion", numQuestion );
-                        i.putExtra("percentageCorrect", percentageCorrect);
-                        startActivity(i);
+                                    // Specifying a listener allows you to take an action before dismissing the dialog.
+                                    // The dialog is automatically dismissed when a dialog button is clicked.
+                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            // Continue with delete operation
+                                        }
+                                    })
 
+
+                                    .setIcon(android.R.drawable.ic_dialog_alert)
+                                    .show();
+                        }else{
+                            new AlertDialog.Builder(MultiplicationQuestions.this)
+                                    .setTitle("Incorrect")
+                                    .setMessage("You got it wrong!")
+
+                                    // Specifying a listener allows you to take an action before dismissing the dialog.
+                                    // The dialog is automatically dismissed when a dialog button is clicked.
+                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            // Continue with delete operation
+                                        }
+                                    })
+
+
+                                    .setIcon(android.R.drawable.ic_dialog_alert)
+                                    .show();
+
+                        }
+
+                        //resetting the text box so it is empty
+                        mEditText.setText("");
+                        if(counter>0){
+                            math();
+                        }else{
+
+                            //if the number of questions is complete we open a new activity that will show the user how they did
+
+                            Intent i = new Intent(MultiplicationQuestions.this, SolutionPage.class);
+
+                            //we are passing the variables here
+                            i.putExtra("correct", correct);
+                            i.putExtra("numQuestion", numQuestion );
+                            i.putExtra("percentageCorrect", percentageCorrect);
+                            startActivity(i);
+
+                        }}catch (NumberFormatException e){
+                        //have to increment again because of the try
+                        counter = counter+1;
+                        mEditText.setError( "A positive integer is required!" );
                     }}
 
             }
