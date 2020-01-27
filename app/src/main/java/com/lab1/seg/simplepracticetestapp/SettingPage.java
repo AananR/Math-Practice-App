@@ -133,7 +133,7 @@ public class SettingPage extends AppCompatActivity {
             percentageCorrect =  Integer.parseInt(pEditText.getText().toString());
             new AlertDialog.Builder(this)
                     .setTitle("Percentage to Pass")
-                    .setMessage("You will now need above "+ percentageCorrect+"% to pass.")
+                    .setMessage("You will now need "+ percentageCorrect+"% or above to pass.")
 
                     // Specifying a listener allows you to take an action before dismissing the dialog.
                     // The dialog is automatically dismissed when a dialog button is clicked.
