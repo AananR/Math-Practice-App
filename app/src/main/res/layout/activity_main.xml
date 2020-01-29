@@ -16,70 +16,91 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#A9A9A9"
+            android:background="#C6D5E5"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Welcome!"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+                android:text="@string/welcome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="#3F51B5"
+                app:fontFamily="serif" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Please choose one of the following categories:"
+                android:layout_height="103dp"
+                android:gravity="center"
+                android:text="@string/please_choose_one_of_the_following_categories"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textColor="@android:color/black" />
+                android:textColor="#DA3F51B5"
+                android:textSize="30sp"
+                app:fontFamily="serif" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="255dp"
+            android:layout_height="339dp"
 
+            android:background="#C6D5E5"
+            android:clipChildren="true"
             android:orientation="vertical">
 
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="233dp"
-                android:layout_height="111dp"
-                android:layout_gravity="center"
+                android:layout_width="234dp"
+                android:layout_height="148dp"
+                android:layout_gravity="bottom|center|center_horizontal|center_vertical"
+                android:background="#515EB5"
+                android:editable="false"
                 android:gravity="center"
                 android:onClick="openAdditionPage"
-                android:text="Addition" />
+                android:text="Addition"
+                android:textColor="#BACBDE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="235dp"
-                android:layout_height="121dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_width="233dp"
+                android:layout_height="144dp"
+                android:layout_gravity="bottom|center_horizontal"
+
+                android:background="#BA3F51B5"
                 android:onClick="openMultiplicationPage"
-                android:text="Multiplication" />
+                android:text="Multiplication"
+                android:textColor="#BACBDE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="119dp"
+            android:layout_height="50dp"
+            android:background="#C6D5E5"
             android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#C6D5E5"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
+                android:layout_width="104dp"
+                android:layout_height="67dp"
                 android:layout_gravity="center"
-                android:background="@android:color/holo_blue_bright"
+                android:background="#B53F51B5"
                 android:onClick="openSettingPage"
-                android:text="Settings" />
+                android:text="Settings"
+                android:textColor="#BACBDE" />
         </LinearLayout>
     </LinearLayout>
 
