@@ -155,8 +155,8 @@
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="104dp"
-                android:layout_height="67dp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:background="#B51938E7"
                 android:onClick="goHome"
