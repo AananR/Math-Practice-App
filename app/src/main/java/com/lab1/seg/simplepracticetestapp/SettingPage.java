@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,9 @@ public class SettingPage extends AppCompatActivity {
     private int percentageCorrect;
     private Button qButton;
     private Button pButton;
+
+    private TextView numOfQuestions;
+    private TextView percOfPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,19 @@ public class SettingPage extends AppCompatActivity {
         if (extras != null) {
             numQuestion = extras.getInt("numQuestions");
             percentageCorrect = extras.getInt("percentage");}
+
+        //we are finding the textviews to show the user the number of questions that will be asked and the percentage to pass
+        numOfQuestions = (TextView) findViewById(R.id.textView87);
+        percOfPass = (TextView) findViewById(R.id.textView88);
+
+
+        //we are setting it to the default value
+        numOfQuestions.setText("");
+        numOfQuestions.setText("Number of questions: "+numQuestion);
+
+        //we are setting it to the default value
+        percOfPass.setText("");
+        percOfPass.setText("Percentage needed to pass: "+percentageCorrect+"%");
 
 
 
@@ -100,7 +117,13 @@ public class SettingPage extends AppCompatActivity {
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
 
-       }}catch (NumberFormatException e){
+       }
+           //we are setting it to the new value
+           numOfQuestions.setText("");
+           numOfQuestions.setText("Number of questions: "+numQuestion);
+
+
+       }catch (NumberFormatException e){
 
            mEditText.setError( "A positive integer is required!" );
        }
@@ -147,7 +170,12 @@ public class SettingPage extends AppCompatActivity {
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .show();
 
-        }}catch (NumberFormatException e){
+        }
+            //we are setting it to the new value
+            percOfPass.setText("");
+            percOfPass.setText("Percentage needed to pass: "+percentageCorrect+"%");
+
+        }catch (NumberFormatException e){
 
             pEditText.setError( "A positive integer is required!" );
         }

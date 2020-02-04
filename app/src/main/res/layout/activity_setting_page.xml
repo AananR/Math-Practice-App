@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="114dp"
+            android:layout_height="89dp"
             android:background="#C6D5E5"
             android:orientation="vertical">
 
@@ -27,6 +27,43 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display3"
                 android:textColor="#3F51B5" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6D5E5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#DA3D09F0"
+                android:textSize="20dp"
+                app:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#DA3D09F0"
+                android:textSize="20dp"
+                app:fontFamily="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:orientation="vertical"
+            android:background="#C6D5E5"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,7 +141,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="wrap_content"
             android:background="#C6D5E5"
             android:orientation="vertical">
 
@@ -112,7 +149,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="194dp"
+            android:layout_height="202dp"
             android:background="#C6D5E5"
             android:orientation="vertical">
 
