@@ -106,11 +106,13 @@
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:background="#C6D5E5"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="194dp"
             android:background="#C6D5E5"
             android:orientation="vertical">
 
@@ -119,10 +121,11 @@
                 android:layout_width="104dp"
                 android:layout_height="67dp"
                 android:layout_gravity="center"
-                android:background="#B53F51B5"
+                android:background="#B51938E7"
                 android:onClick="goHome"
                 android:text="Home"
                 android:textColor="#BACBDE" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

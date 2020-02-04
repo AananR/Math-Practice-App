@@ -13,7 +13,6 @@
         <activity android:name=".MultiplicationQuestions" />
         <activity android:name=".SolutionPage" />
         <activity android:name=".AdditionQuestions" />
-        <activity android:name=".MainPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
