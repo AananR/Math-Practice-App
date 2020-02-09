@@ -1,2 +1,2 @@
-# SEG3125-LAB1
-Develop an android application that will allow users to create customized practice tests. The app will also display your results and exam history with just a few taps. Study anywhere and anytime!
+# Math Practice App
+This is a basic app that let users practice addition and multiplication questions. It was created to help my little cousin out in school.
